@@ -127,7 +127,7 @@
         /* Hero Section */
         .hero {
             min-height: 100vh;
-            background: url('images/hero/bg1.png') center/cover no-repeat;
+            background: url('images/hero/bg1.png') bottom/cover no-repeat;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -528,9 +528,10 @@
 
         /* Roadmap Section */
         .roadmap {
-            padding: 5rem 2rem;
-            background: rgba(255, 255, 255, 0.05);
-        }
+    padding: 5rem 2rem;
+    background: url('images/roadmap/bg6.png') center/cover no-repeat;
+    position: relative;
+}
 
         .roadmap-container {
             position: relative;
@@ -697,9 +698,10 @@
 
         /* Core Gameplay Section */
         .gameplay {
-            padding: 5rem 2rem;
-            background: rgba(0, 0, 0, 0.1);
-        }
+    padding: 5rem 2rem;
+    background: url('images/core-gameplay/bg5.png') top/cover no-repeat;
+    position: relative;
+}
 
         .gameplay-content {
             display: flex;
@@ -1130,13 +1132,19 @@
     position: relative;
     z-index: 2;
 }
-        .token-allocation h3 {
-            text-align: center;
-            margin-bottom: 40px;
-            font-size: 2rem;
-            color: #333;
-        }
 
+.allocation-title {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.allocation-desc {
+    color: #ccc;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
         .allocation-chart {
     background: url('images/token-allocation/container-bg.png') center/contain no-repeat;
     padding: 250px 40px 40px 40px;
@@ -1179,9 +1187,6 @@
             align-items: center;
             gap: 20px;
             padding: 20px;
-            background: rgba(255, 255, 255, 0.5);
-            border-radius: 15px;
-            transition: transform 0.3s ease;
         }
 
         .allocation-item:hover {
@@ -1191,33 +1196,36 @@
         .allocation-percentage {
             font-size: 2rem;
             font-weight: bold;
-            min-width: 80px;
             text-align: center;
             padding: 15px;
-            border-radius: 15px;
             color: white;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: relative;
         }
 
-        .allocation-percentage.ecosystem { background: linear-gradient(45deg, #f9d923, #ffe066); }
-        .allocation-percentage.treasury { background: linear-gradient(45deg, #ff6b6b, #ff8a80); }
-        .allocation-percentage.team-alloc { background: linear-gradient(45deg, #4ecdc4, #80deea); }
-        .allocation-percentage.public { background: linear-gradient(45deg, #45b7d1, #81d4fa); }
-        .allocation-percentage.strategic { background: linear-gradient(45deg, #a78bfa, #b39ddb); }
-
-        .allocation-title {
-            font-size: 1.2rem;
-            font-weight: 600;
-            color: #333;
-            margin-bottom: 5px;
+        .allocation-percentage.ecosystem { 
+            background-image: url('images/token-allocation/1.png');
         }
 
-        .allocation-desc {
-            font-size: 0.9rem;
-            color: #666;
-            line-height: 1.4;
+        .allocation-percentage.treasury { 
+            background-image: url('images/token-allocation/2.png');
         }
 
-        /* Mobile Menu Toggle */
+        .allocation-percentage.team-alloc { 
+            background-image: url('images/token-allocation/3.png');
+        }
+
+        .allocation-percentage.public { 
+            background-image: url('images/token-allocation/4.png');
+        }
+
+        .allocation-percentage.strategic { 
+            background-image: url('images/token-allocation/5.png');
+        }
+
+/* Mobile Menu Toggle */
 .mobile-menu-toggle {
     display: none;
     flex-direction: column;
