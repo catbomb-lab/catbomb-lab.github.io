@@ -99,7 +99,29 @@
             </div>
         </div>
     </section>
-
+ <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number" data-target="1000">1000 +</div>
+                    <div class="stat-label">Total Players</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="100000">100000 +</div>
+                    <div class="stat-label">Total Battles</div>
+                </div>
+                <!-- <div class="stat-card">
+                    <div class="stat-number" data-target="100000">$100K+</div>
+                    <div class="stat-label">Gold Backed</div>
+                </div> -->
+                <div class="stat-card">
+                    <div class="stat-number" data-target="10000">10K +</div>
+                    <div class="stat-label">Cat Knights</div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Features Section -->
     <section class="features" id="features">
         <div class="container">
@@ -336,7 +358,7 @@
                 <div class="roadmap-items">
                     <div class="roadmap-item roadmap-left">
                         <div class="roadmap-content">
-                            <div class="roadmap-quarter">Q1 2025</div>
+                            <div class="roadmap-quarter">Q4 2025</div>
                             <p>Project initiation and community building</p>
                             <p>White Paper launch and marketing campaign</p>
                             <p>Begin XAUt gold reserve accumulation</p>
@@ -345,7 +367,7 @@
                     </div>
                     <div class="roadmap-item roadmap-right">
                         <div class="roadmap-content">
-                            <div class="roadmap-quarter">Q2 2025</div>
+                            <div class="roadmap-quarter">Q1 2026</div>
                             <p>$CATBOMB token launch (0.1 THB initial price)</p>
                             <p>First NFT cat collection for early supporters</p>
                             <p>Alpha testing with closed beta group</p>
@@ -354,7 +376,7 @@
                     </div>
                     <div class="roadmap-item roadmap-left">
                         <div class="roadmap-content">
-                            <div class="roadmap-quarter">Q3 2025</div>
+                            <div class="roadmap-quarter">Q2 2026</div>
                             <p>Beta launch for public testing</p>
                             <p>Official NFT marketplace launch</p>
                             <p>Transparent dashboard for prize/charity wallets</p>
@@ -363,7 +385,7 @@
                     </div>
                     <div class="roadmap-item roadmap-right">
                         <div class="roadmap-content">
-                            <div class="roadmap-quarter">Q4 2025</div>
+                            <div class="roadmap-quarter">Q3 2026</div>
                             <p>Global game launch</p>
                             <p>First CATBOMB Gold Prize Tournament</p>
                             <p>First charitable donation with public proof</p>
@@ -372,7 +394,7 @@
                     </div>
                     <div class="roadmap-item roadmap-left">
                         <div class="roadmap-content">
-                            <div class="roadmap-quarter">Q1 2026</div>
+                            <div class="roadmap-quarter">Q4 2026</div>
                             <p>Inaugural Gold Prize Tournament</p>
                             <p>New game content and maps expansion</p>
                             <p>Initial governance features introduction</p>
@@ -381,7 +403,7 @@
                     </div>
                     <div class="roadmap-item roadmap-right">
                         <div class="roadmap-content">
-                            <div class="roadmap-quarter">Q2 2026</div>
+                            <div class="roadmap-quarter">Q1 2027</div>
                             <p>Additional exchange listings</p>
                             <p>Quarterly gold reserves and charity reports</p>
                             <p>Whale tier benefits implementation</p>
@@ -548,7 +570,7 @@
                     current = target;
                     clearInterval(timer);
                 }
-                element.textContent = Math.floor(current).toLocaleString();
+                element.textContent = Math.floor(current).toLocaleString() + " +";
             }, 16);
         }
 
